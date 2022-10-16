@@ -17,7 +17,7 @@ const HALF_LIFE_PERIOD = 5730;
  * dateSample('WOOT!') => false
  *
  */
-function dateSample( /* sampleActivity */ ) {
+function dateSample(sampleActivity) {
     if (typeof sampleActivity === 'string' && +sampleActivity > 0) {
         const putin = +MODERN_ACTIVITY / +sampleActivity;
         const k = 0.693 / HALF_LIFE_PERIOD;
@@ -26,6 +26,9 @@ function dateSample( /* sampleActivity */ ) {
 
     }
     return false
+
+
+
 }
 
 module.exports = {

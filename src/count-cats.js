@@ -14,7 +14,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  * ]) => 3`
  *
  */
-function countCats( /* matrix */ ) {
+function countCats(arr) {
     return arr.reduce(function(acc, cur) {
         if (Array.isArray(cur)) {
             acc += countCats(cur)
