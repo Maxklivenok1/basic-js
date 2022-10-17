@@ -12,7 +12,8 @@ const { NotImplementedError } = require('../extensions/index.js');
  * 
  */
 function getSeason(date) {
-    if (!date) return 'Unable to determine the time of year!'
+    if (!date) return 'Unable to determine the time of year!';
+
     const now = date.getMounth();
     const season = ['winter', 'spring', 'summer', 'fall'];
     const month = [
